@@ -1,0 +1,26 @@
+{
+    "name": "Temp Bedroom",
+    "type": "Hygrotermograph",
+    "address": "A4:C1:38:F3:68:79",
+    "temperatureName": "Temperature",
+    "humidityName": "Humidity",
+    "moistureName": "Moisture",
+    "fertilityName": "Fertility",
+    "illuminanceName": "Illuminance",
+    "fakeGatoEnabled": false,
+    "timeout": 15,
+    "forceDiscovering": true,
+    "forceDiscoveringDelay": 2500,
+    "disableBatteryLevel": false,
+    "lowBattery": 10,
+    "temperatureOffset": 0,
+    "humidityOffset": 0,
+    "moistureOffset": 0,
+    "fertilityOffset": 0,
+    "illuminanceOffset": 0,
+    "accessory": "Hygrotermograph",
+    "_bridge": {
+        "username": "0E:EA:E6:35:A2:43",
+        "port": 55099
+    }
+}
