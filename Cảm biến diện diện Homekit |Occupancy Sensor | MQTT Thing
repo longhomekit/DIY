@@ -3,8 +3,8 @@
     "type": "occupancySensor",
     "name": "Occupancy Sensor",
     "url": "192.168.1.118:1883",
-    "username": "longhomekit",
-    "password": "123456",
+    "username": "<longhomekit",
+    "password": "xxxxxx",
     "caption": "<label (optional)>",
     "topics": {
         "getOccupancyDetected": {
