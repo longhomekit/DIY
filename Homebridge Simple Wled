@@ -1,0 +1,33 @@
+{
+    "platform": "WLED",
+    "wleds": [
+        {
+            "name": "LED Color Sound",
+            "host": "192.168.1.222",
+            "effects": [
+                "Solid@;!;",
+                "Sweep@!,!;!,!,;!",
+                "Rainbow@!,Size;1,2,3;!",
+                "Sparkle Dark@!,!;Bg,Fx,;!",
+                "Strobe Rainbow@!,;,!,;!",
+                "Android@!,Width;!,!,;!",
+                "Chase Rainbow@!,Width;!,!,;0",
+                "Rainbow Runner@!,Size;Bg,,;!",
+                "Solid Glitter@,!;!,,;0",
+                "Flow",
+                " ♪ Pixelwave@!,Sensitivity=64;!,!;!",
+                " ♪ Matripix@!,Brightness=64;,!;!",
+                " ♪ Puddles@Fade rate,Puddle size;!,!;!",
+                " ♫ Rocktaves@;,!;!"
+            ],
+            "log": false,
+            "showEffectControl": true,
+            "turnOffWledWithEffect": false,
+            "defaultEffectSpeed": 20
+        }
+    ],
+    "_bridge": {
+        "username": "0E:99:50:2F:EA:C5",
+        "port": 30338
+    }
+}
