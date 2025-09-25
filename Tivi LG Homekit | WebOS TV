@@ -1,0 +1,46 @@
+{
+    "platform": "webostv",
+    "devices": [
+        {
+            "name": "WebOS TV",
+            "ip": "192.168.1.76",
+            "mac": "4c:bc:e9:c7:1f:d6",
+            "pollingInterval": 10,
+            "volumeControl": "slider",
+            "channelControl": false,
+            "mediaControl": false,
+            "serviceMenuButton": false,
+            "appButtons": [
+                {
+                    "appId": "youtube.leanback.v4",
+                    "name": "YouTube",
+                    "params": {
+                        "contentTarget": "https://www.youtube.com/tv?v=hiRn1Y_p5xA"
+                    }
+                }
+            ],
+            "ccRemoteRemap": {
+                "arrowup": "VOLUMEUP",
+                "arrowdown": "VOLUMEDOWN",
+                "arrowleft": "CHANNELDOWN",
+                "arrowright": "CHANNELUP",
+                "select": "PROGRAM",
+                "back": "BACK",
+                "playpause": "YELLOW",
+                "information": "TELETEXT",
+                "youtube.leanback.v4": {
+                    "information": "MUTE",
+                    "select": "HOME"
+                }
+            }
+        }
+    ],
+    "_bridge": {
+        "username": "0E:6F:A1:98:05:E9",
+        "port": 48752,
+        "name": "homebridge-webos-tv E911",
+        "model": "Webos",
+        "firmwareRevision": "10.0",
+        "manufacturer": "Long-Homekit"
+    }
+}
