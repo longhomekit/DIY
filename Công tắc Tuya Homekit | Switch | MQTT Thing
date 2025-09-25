@@ -1,0 +1,27 @@
+{
+    "type": "switch",
+    "name": "PI3 Power",
+    "url": "192.168.1.10:1883",
+    "username": "longhomekit",
+    "password": "xxxxxx",
+    "topics": {
+        "getOnline": "Switch2CHLightT6obk2D799CF8/connected",
+        "getOn": "Switch2CHLightT6obk2D799CF8/2/get",
+        "setOn": "Switch2CHLightT6obk2D799CF8/2/set"
+    },
+    "startPub": [
+        {
+            "topic": "Switch2CHLightT6obk2D799CF8/2/get"
+        }
+    ],
+    "onlineValue": "Online",
+    "offlineValue": "Offline",
+    "confirmationIndicateOffline": true,
+    "onValue": "1",
+    "offValue": "0",
+    "manufacturer": "2CH - PI3 Power T6",
+    "model": "2CH-PI3 Power T6",
+    "serialNumber": "28779",
+    "firmwareRevision": "10.0",
+    "accessory": "mqttthing"
+}
