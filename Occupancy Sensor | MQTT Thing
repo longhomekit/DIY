@@ -1,0 +1,18 @@
+{
+    "accessory": "mqttthing",
+    "type": "occupancySensor",
+    "name": "Occupancy Sensor",
+    "url": "192.168.1.118:1883",
+    "username": "longhomekit",
+    "password": "123456",
+    "caption": "<label (optional)>",
+    "topics": {
+        "getOccupancyDetected": {
+            "topic": "tele/tasmota_0E84D4/CAMBIEN",
+            "apply": "let occupancy = JSON.parse(message).Occupancy; return (occupancy > 10 ? 'ON' : 'OFF')"
+        }
+    },
+    "integerValue": false,
+    "onValue": "ON",
+    "offValue": "OFF"
+}
