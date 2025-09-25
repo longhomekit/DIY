@@ -1,0 +1,35 @@
+{
+    "accessory": "mqttthing",
+    "type": "outlet",
+    "name": "Power Total Energer",
+    "url": "192.168.1.10:1883",
+    "username": "longhomekit",
+    "password": "xxxxxx",
+    "topics": {
+        "getOn": "stat/tasmota_3C82F5/POWER",
+        "setOn": "cmnd/tasmota_3C82F5/POWER",
+        "getWatts": {
+            "topic": "tele/tasmota_3C82F5/SENSOR",
+            "apply": "return JSON.parse(message).ENERGY.Power;"
+        },
+        "getVolts": {
+            "topic": "tele/tasmota_3C82F5/SENSOR",
+            "apply": "return JSON.parse(message).ENERGY.Voltage;"
+        },
+        "getAmperes": {
+            "topic": "tele/tasmota_3C82F5/SENSOR",
+            "apply": "return JSON.parse(message).ENERGY.Current;"
+        },
+        "getTotalConsumption": {
+            "topic": "tele/tasmota_3C82F5/SENSOR",
+            "apply": "return JSON.parse(message).ENERGY.Total;"
+        },
+        "getInUse": {
+            "topic": "tele/tasmota_3C82F5/SENSOR",
+            "apply": "return (JSON.parse(message).ENERGY.Power > 2) ? 'ON' : 'OFF'"
+        }
+    },
+    "onValue": "ON",
+    "offValue": "OFF",
+    "history": "true"
+}
